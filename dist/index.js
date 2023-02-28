@@ -948,6 +948,8 @@ async function run() {
       }
 
       const fields = await getFields(issueId);
+	    console.log(fields);
+	    console.log(YT_COLUMN_FIELD);
       const state = fields.find(x => x.name === YT_COLUMN_FIELD);
       const value = state.value && state.value.name.toLowerCase();
 
